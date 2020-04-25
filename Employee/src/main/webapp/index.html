@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MyWebsite.com</title>
+<script type="text/javascript" src = "angularfiles/jquery.min.js"></script>
+<script type="text/javascript" src = "angularfiles/angular.min.js"></script>
+<script type="text/javascript" src = "angularfiles/angular-ui-router.min.js"></script>
+<script type="text/javascript" src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.8.3/i18n/ui-grid.core.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link re="stylesheet" href ="css/registrationStyle.css">
+<link rel = "stylesheet" href ="css/style.css">
+<link rel = "stylesheet" href ="style/style.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular-animate.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular-aria.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/lodash.min.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/jszip.min.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/excel-builder.dist.js"></script>
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+
+
+
+<!-- Controller -->
+<script type="text/javascript" src ="controller/app.module.js"></script>
+<script type="text/javascript" src ="common/app.route.js"></script>
+<script type="text/javascript" src = "controller/employee.summary.controller.js"></script>
+<script type="text/javascript" src = "controller/employee.detail.js"></script>
+
+
+<!-- Service -->
+
+<script type="text/javascript" src ="common/app.constatnt.js"></script>
+<script type="text/javascript" src ="common/app.common.js"></script>
+<script type="text/javascript" src ="service/app.employee.service.js"></script>
+<script type="text/javascript" src ="common/app.ajax.js"></script>
+
+
+</head> 
+<body ng-app="ApplicationModule">
+<div ui-view></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<style>
+empDiv {
+	color: red;
+	align-left:600px;
+}
+</style>
+
+<div>
+	<div style="width: 900px !important; margin-left: 230px; margin-top: 20px;" ng-app="ApplicationModule" ng-controller="EmployeeDetailController" ng-init="init();">
+	<button type="button" class="btn btn-success">  <a href="" ng-click="goBack()"> Sumary </a> </button>
+	<button type="button" class="btn btn-success" style = "margin-left: 750px;">Details</button>
+	</br></br>
+	<!-- <form ng-submit="submitEmployee()"> -->
+	 <form name="employeeDetailsForm"  role="form" novalidate="novalidate" ng-submit="submitEmployee(employeeDetailsForm.$valid)" >
+		       	<input type="hidden" id="id" name="id" ng-model="employeeObject.id">
+	  <div class="" >
+	    <label for="name">{{LABELS.NAME}}<em>*</em></label>
+	    <small style="color: red;margin-left: 709px;" ng-if="employeeDetailsForm.$submitted && employeeDetailsForm.name.$error.required" >required information </small> 
+	    <input type="text" class="form-control" id="name" name="name" ng-model="employeeObject.name" placeholder="Enter Name" required/>
+	   
+	  </div>
+	  <div class="">
+	    <label for="age">{{LABELS.AGE}}<em>*</em></label>
+	    <small style="color: red;margin-left: 721px;" ng-if="employeeDetailsForm.$submitted && employeeDetailsForm.age.$error.required">required information </small>
+	    <input type="number" class="form-control" id="age" name="age"  ng-model="employeeObject.age" placeholder="Enter Age" required/>
+	   
+	  </div>
+	  <div class="">
+	    <label for="gender">{{LABELS.GENDER}}<em>*</em></label>
+	    <small style="color: red;margin-left: 700px;" ng-if="employeeDetailsForm.$submitted && employeeDetailsForm.gender.$error.required">required information </small>
+	    <input type="text" class="form-control" id="gender" name="gender" ng-model="employeeObject.gender" placeholder="Enter Gender" required/>
+	   
+	  </div>
+	  <button type="submit" class="btn btn-success">Submit</button>
+	  <button type="button" ng-click="clear()"  class="btn btn-success">clear</button>
+	</form>
+	</div>
+</div>

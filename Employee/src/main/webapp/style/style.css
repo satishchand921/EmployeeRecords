@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+
+td {
+	border: 1px solid gray;
+	width: 19%;
+	color: #2b1e1e;
+	text-align: center;
+}
+
+table {
+	align: center;
+	border-collapse: collapse;
+	width: 600px;
+}
+
+.button {
+	cursor: pointer;
+	color: white;
+}
+input{
+	background-color: white !important;
+}
+th {
+	width: 20%;
+	color: red;
+	background-color: #e8e5e5;
+	text-align: center !important;
+}
+
+h1 {
+	color: #ce415a;
+	text-align: center;
+	background-color: silver;
+}
+
+h2 {
+	color: #ff0000;
+	text-align: center;
+	background-color: f5f0f0;
+}
+
+h3 {
+	color: #ce415a;
+	background-color: f5f0f0;
+}
+
+#div1 {
+	
+	background-color: f5f0f0;
+}
+a {
+    color: #d9edf7 !important;
+    text-decoration: none !important;
+}
+a:focus, a:hover{
+	color:#d2c5c5 !important;
+	text-decoration:blink !important;
+}
+button, input, optgroup, select, textarea {
+    color: #151313 !important;
+    font: -webkit-body !important;
+    margin: 0;
+}
+#div2 {
+
+	width:400px;
+	color:#b72243;
+	background-color: f5f0f0;
+}
+#div3{
+	/* border: 30px solid;
+	align:center;
+	  */
+}
+.alignment
+{
+	float:right;
+}
