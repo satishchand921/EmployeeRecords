@@ -8,6 +8,7 @@ The technologies used are:
 5. css
 6. Javascript
 7. Bootstrap
+8. MyBatis
 
 
 Reqirements:
